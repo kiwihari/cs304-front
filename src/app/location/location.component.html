@@ -1,0 +1,43 @@
+<div class="col col-md-6 col-offset-3">
+    
+  <form (ngSubmit)="register()">
+      <div class="md-form">
+           <i class="fa fa-address-card prefix"></i>
+          <input mdbInputDirective type="text" class="form-control" name="location_id" id="id" [(ngModel)]="location.name">
+          <label for="name">location ID</label>
+      </div>
+
+      <div class="md-form">
+          <i class="fa fa-user prefix"></i>
+          <input mdbInputDirective type="text" class="form-control" name="name" id="name" [(ngModel)]="location.name">
+          <label for="name">Name</label>
+        </div>
+      
+      <div class="md-form">
+          <i class="fa fa-address-card prefix"></i>
+          <label for="address">Address</label>
+          <input mdbInputDirective type="text" class="form-control" name="line1" id="address"  [(ngModel)]="location.address.line1">
+          <input mdbInputDirective type="text"
+           class="form-control" name="line2" placeholder="Line1" id="addresss"  [(ngModel)]="user.address.Line1">
+           <input mdbInputDirective type="text"
+           class="form-control" name="city" placeholder="Line2" id="addresss"  [(ngModel)]="user.address.Line2">
+        </div>
+
+        <div class="md-form">
+            <i class="fa fa-address-card-o black-text prefix"></i>
+            <label for="phone">Contact No</label>
+            <input mdbInputDirective type="text" class="form-control" name="phone" id="phone"  [(ngModel)]="location.phone">
+          </div>
+          
+          <div class="md-form">
+            <i class="fa fa-address-card-o black-text prefix"></i>
+            <label for="phone">Location</label>
+            <input mdbInputDirective type="text" class="form-control" name="phone" id="phone"  [(ngModel)]="location.phone">
+            <input mdbInputDirective type="text" class="form-control" placeholder="Nearest Road" name="phone" id="phone"  [(ngModel)]="location.phone">
+            
+            <input mdbInputDirective type="text" class="form-control" placeholder="Place" name="phone" id="phone"  [(ngModel)]="location.phone">
+          </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
